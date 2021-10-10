@@ -313,6 +313,7 @@ footer {
 .Premiere_colonne_footer>a, .seconde_colonne_footer>a, .troisième_colonne_footer>a{
     line-height: .7;
 }
+/** Media Queries*/
 @media all and (min-width: 280px) and (max-width: 390px) {
     main, nav, header, footer {
         margin: 0;
