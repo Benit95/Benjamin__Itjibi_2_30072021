@@ -705,7 +705,7 @@ footer {
     }
     #container_cartes_hebergements {
         display: flex;
-        flex-direction: row wrap;
+        flex-flow: row wrap;
     }
     .cartes_hebergements {
         width: 32%;
