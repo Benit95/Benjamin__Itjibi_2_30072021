@@ -255,9 +255,8 @@ main {
 }
 #container_activites {
     display: flex;
-    height: 500px;
-    flex-direction: column;
-    flex-wrap: wrap;
+    height: 450px;
+    flex-flow: column wrap;
     gap: 2em;
 }
 
