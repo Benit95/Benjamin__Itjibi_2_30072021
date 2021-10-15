@@ -50,7 +50,7 @@ header {
     font-size: .8em;
 }
 hgroup {
-    font-size: 1.8em;
+    font-size: .8em;
 }
 hgroup>h2 {
     font-size: 1.3em;
@@ -214,22 +214,18 @@ main {
 }
 #container_populairecard{
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     row-gap: 2em;
-}
-
-#container_populairecard{
-    display: flex;
-    width: 100%;
 }
 .cartes_populaires {
     display: flex;
-    width: 85%;
+    width: 70%;
+    flex-flow: column wrap;
     height: 140px;
     margin: auto;
     background-color: white;
     border-radius:1em;
-    border:.25em solid white;
+    border:.25em solid transparent;
 }
 .img_populaire{
     width: 40%;
@@ -239,8 +235,9 @@ main {
 }
 .texte_populaires{
     font-size: .9em;
-    width: 40%;
-    padding:0 2em;
+    height: 75%;
+    padding:0;
+    margin: 0;
     line-height: .9em;
 }
 
@@ -249,7 +246,8 @@ main {
     font-size: .9em;
 }
 .note_populaires{
-    padding-top: 2em;
+    padding:.5em;
+    margin: 0;
     font-size: .8em;
 }
 #activites {
@@ -755,13 +753,11 @@ footer {
         display: flex;
     }
 }
-@media all and (min-width: 1024px) and (max-width: 1400px) {
+@media all and (min-width: 1024px) {
     .cartes_hebergements { 
         width: 32%;
     }
-    .cartes_populaires {
-        width: 95%;
-    }
+    
     .texte_populaires {
         width: 44%;
         padding: 0 .5em;
